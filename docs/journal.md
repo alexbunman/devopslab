@@ -2,6 +2,7 @@
 
 | Date | Décision |
 |---|---|
+| 2026-11-24 | Raspberry Pi 3B : garde n8n jusqu'à la migration vers Oracle, puis devient bastion d'administration hors bande (Tailscale), relais Wake-on-LAN du mini PC et cible de test Ansible en ARM. Abandon du rôle de nœud de sauvegarde. Hors périmètre du projet RNCP. |
 | 2026-11-24 | Le labo devient le **projet du jury RNCP36061** (mars 2027). Ajout d'une application à déployer (movie-service et cast-service du projet Jenkins) pour couvrir les compétences 5 et 8. Cluster API et autoscaling des VM classés en bonus. Voir `docs/rncp/`. |
 | 2026-11-24 | Scénario de bascule vers AWS (pipeline DR, k3s sur EC2, Velero, ArgoCD, DNS) testé une fois par trimestre. Prérequis : miroir Git hors maison, 7 jours de sauvegardes en S3 Standard. |
 | 2026-11-24 | AWS S3 (puis Glacier Deep Archive par cycle de vie) comme 3e copie des sauvegardes. Labos AWS jetables (`apply` / `destroy`) avec alerte de budget. Le tout-cloud est écarté : trop cher pour un labo allumé en permanence. |
