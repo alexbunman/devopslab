@@ -2,6 +2,8 @@
 
 5 novembre 2026 · alex · version de travail ([doc en ligne](https://claude.ai/artifact/9JT2FTeCMn6sQJhKjN5nL9))
 
+> **Mise à jour du 24 novembre 2026 :** l'architecture et le matériel ont évolué. Voir [architecture-hybride.md](architecture-hybride.md) et le [journal](journal.md). Les étapes 0 à 4 restent valables ; le Pi et Backblaze B2 sont remplacés par Oracle et AWS S3 pour les sauvegardes, et le mini PC devient un fanless i5-1235U avec 64 Go.
+
 Le labo passe d'un Pi 3 qui fait tout à une architecture hybride en 9 étapes, pour environ 200 à 300 € au total, presque entièrement le mini PC. Chaque étape ajoute un outil demandé dans les offres DevOps et laisse une trace dans Git.
 
 Point de départ : n8n tourne sur le Pi 3 (1 Go, Docker, Tailscale), documenté dans le dépôt `pi3-n8n`. Le plan est en mode bac à sable : rien n'est déployé tant que tu ne donnes pas le feu vert.
